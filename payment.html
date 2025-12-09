@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+    <link rel="stylesheet" href="./payment.css">
+</head>
+<body>
+    <h1>Payment Gateway</h1>
+    <div class="frame">
+    <form action="">
+        <label for="UPI_ID">UPI ID</label>
+        <input type="text" name="UPI_ID" id="UPI_ID">
+
+        <label for="app">UPI Application</label>
+        <select name="app" id="app">
+            <option value="">Paytm</option>
+            <option value="">Google Pay</option>
+            <option value="">Phonepe</option>
+            <option value="">Bhim</option>
+        </select>
+
+        <label for="debit">Debit card</label>
+        <input type="number" name="debit" id="debit" placeholder="Enter last 6 digit">
+
+        <button onclick="disp()">Pay</button>
+
+
+    </form>
+    </div>
+    <script>
+        function disp(){
+            alert("Payment successful!!!");
+        }
+    </script>
+</body>
+</html>
